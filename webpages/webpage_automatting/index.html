@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="main.css" rel="stylesheet" media="all">
+<meta name="description" content="Automatic Portrait Segmentation" />
+<meta name="keywords" content="matting, segmentation, portrait, automatic, stylization, beautification, depth-of-field, background editing">
+<script>
+function buttonSwitch(id, text)
+{
+	old_src = document.getElementById(id).src;
+	ind = old_src.lastIndexOf('/');
+	document.getElementById(id).src = old_src.substr(0,ind+1) + text;
+}
+
+
+</script>
+<title>Deep Automatic Portrait Matting </title>
+</head>
+
+<body>
+
+<div id="top_arrow" style="position: fixed; bottom: 10px; right: 10px;">
+<a href="#title">
+<img src="./figures/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 32px;"/></a>
+</div>
+
+
+<h2 id="title" class="auto-style1">
+<!--<img alt="" class="style4" height="135" src="figures/siga_2012.jpg" style="float: left" width="123">-->
+Deep Automatic Portrait Matting</h2>
+<p class="auto-style7"  align="center">
+	<a href="http://xiaoyongshen.me" target="_blank">Xiaoyong Shen</a> 
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://www.xtao.website" target="_blank">Xin Tao</a>
+	&nbsp;&nbsp;&nbsp;
+	Hongyun Gao
+	&nbsp;&nbsp;&nbsp;
+	Chao Zhou
+	&nbsp;&nbsp;&nbsp;
+	<a href="http://www.cse.cuhk.edu.hk/leojia/" target="_blank">Jiaya Jia</a>
+	&nbsp;&nbsp;&nbsp;
+</p>
+
+<p class="auto-style7"  align="center">The Chinese Univeristy of Hong Kong</p>
+<!--<p class="auto-style7"  align="center">&nbsp;&nbsp;&nbsp; </p>-->
+<p align=left>&nbsp;</p>
+<p align="center">
+<table style="width:960px" align="center">
+<tr>
+	<td><img width=960px alt="" src="figures/teaser.png"></td>	
+</tr>
+<tr>
+	<td><p class="auto-style5">Our deep automatic portrait matting is an end-to-end CNNs, which takes a portrait as input and directly predicts the alpha matte. The framework mainly includes two parts. The first one is the trimap labeling and the second is the matting layer with our novel defined functions. </p></td>
+</tr>
+</table>
+
+<p class="style2"><strong><span class="auto-style6">Abstract</span></strong></p>
+<p class="auto-style5">We propose an automatic image matting method for portrait
+images. This method does not need user interaction, which was
+however essential in most previous approaches. In order to accomplish
+this goal, a new end-to-end convolutional neural network (CNN) based
+framework is proposed taking the input of a portrait image. It outputs
+the matte result. Our method considers not only image semantic prediction
+but also pixel-level image matte optimization. A new portrait image
+dataset is constructed with our labeled matting ground truth. Our automatic
+method achieves comparable results with state-of-the-art methods
+that require specified foreground and background regions or pixels. Many
+applications are enabled given the automatic nature of our system.
+</p>
+<p class="auto-style5">&nbsp;</p>
+
+<p id="Related Project", class="auto-style4"><strong>Related Project</strong></p>
+<p class="auto-style5">
+<ul>
+	<li>
+	<p class="auto-style5" align="left" style="font-size:17px">
+	<a href="http://xiaoyongshen.me/webpage_portrait/index.html">Automatic Portrait Segmentation for Image Stylization</a>, which was reoprted by <a href="https://news.developer.nvidia.com/new-deep-learning-method-enhances-your-selfies/">Nvidia</a>, <a href="http://petapixel.com/2016/06/29/super-accurate-portrait-selection-masking-using-neural-networks/">PetaPixel</a>, <a href="http://www.diyphotography.net/next-smart-selection-powered-neural-network/">DIYPhotography</a>, <a href="http://www.ithome.com/html/digi/237997.htm">ITHome</a>, etc.</p>
+	</li>
+	</li>
+</ul>
+</p>
+
+<p class="auto-style5">&nbsp;</p>
+<p id="results", class="auto-style4"><strong>Results</strong></p>
+<table style="width:960px" align="center">
+<tr>
+	<td><img width=960px alt="" src="figures/results.png"></td>	
+</tr>
+</table>
+
+<p class="auto-style5">&nbsp;</p>
+<p id="downloads", class="auto-style4"><strong>Downloads</strong></p>
+
+<table cellSpacing=4 cellPadding=2 border=0 style="width: 90%">
+<tr COLSPAN="2">
+	<td align="center" valign="center">
+		<img style="padding:0; clear:both; " src="figures/paper_icon1.png" align="middle" alt="Snapshot for paper" class="pdf" width="200" />
+	</td>
+	<td align="left" class="auto-style5">"Deep Automatic Portrait Matting&quot;<br>
+Xiaoyong Shen, Xin Tao, Hongyun Gao, Chao Zhou, Jiaya Jia.
+European Conference on Computer Vision (ECCV), 2016<br><br>
+<img alt="" height="32" src="figures/pdf_icon.gif" width="31">&nbsp;&nbsp;[<a href="./papers/deepmatting.pdf">Paper (pdf, 3.29MB)</a>]<br><br> 
+<img alt="" height="32" src="figures/ppt.gif" width="31">&nbsp;&nbsp;[<a href="./papers/spotlight.pptx">Spotlight Presentation (pptx, 12.65MB)</a>]<br><br> 
+<img alt="" height="32" width="32" src="figures/zip_icons.jpg">&nbsp;[Data(zip, 1.15GB)] Please send Email to <a href="mailto:goodshenxy@gmail.com">goodshenxy@gmail.com</a> to request it. <br><br> &nbsp;
+</td>
+</tr>
+</table>
+<br>
+
+<p class="auto-style1"><font color="#999999">Last update: Oct. 1, 2016</font></p>
+
+
+</body>
+
+</html>
